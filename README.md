@@ -1,5 +1,5 @@
-# Macaron Service Code Server
+# Macaron Service: Code Server
 
 ```bash
-macaron install https://github.com/clemenzi/macaron-service-code-server
+macaron install https://github.com/macaron-services/code-server
 ```

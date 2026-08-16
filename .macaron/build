@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+if ! command -v code-server &> /dev/null; then
+    echo "ℹ️  code-server is not available, do you want to install it with Homebrew? (y/n): "
+    read -r answer
+    if [[ $answer == "y" ]]; then
+        echo "🔄 Installing code-server with Homebrew..."
+        brew install code-server
+    else
+        echo "🟡 Ok, keep in mind you may need to install it manually later."
+        exit 1
+    fi
+fi
